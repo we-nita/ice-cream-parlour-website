@@ -181,7 +181,7 @@
 
     <!-- copyright -->
     <div class="copyright">
-        &copy; 2024 by <span>DharshiB</span> | All Rights Deserved
+        &copy; <span id="current-year"></span> by <span>DharshiB</span> | All Rights Deserved
     </div>
 
     </div>
@@ -198,6 +198,13 @@
     <script type="module" src="script/cart.js"></script>
     <script src="script/FAQ.js"></script>
     <script src="script/topscrollindicator.js"></script>
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the HTML content
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
 </body>
 
 </html>

@@ -184,9 +184,16 @@ footer p {
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 IcyCo Ice Cream. All Rights Reserved.</p>
+            <p>&copy; <span id="current-year"></span> IcyCo Ice Cream. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the HTML content
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
 
     
 </body>
